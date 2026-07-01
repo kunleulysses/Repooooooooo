@@ -1,0 +1,21 @@
+{
+  "event_id": "AIFI-SENTINEL-002",
+  "event_type": "sentinel_anomaly_detected",
+  "source": "mock_ai_fi_telemetry",
+  "anomaly": {
+    "category": "execution_guardrail",
+    "severity": "high",
+    "description": "Proposed mutation failed deterministic safety boundary check.",
+    "recommended_action": "rollback"
+  },
+  "consensus": {
+    "votes_required": 4,
+    "votes_observed": 2,
+    "status": "threshold_not_met"
+  },
+  "rollback": {
+    "safe_state": "genesis_state_snapshot",
+    "requires_human_acknowledgment": true
+  },
+  "public_demo_note": "Fictional sanitized event. No live system is modified."
+}

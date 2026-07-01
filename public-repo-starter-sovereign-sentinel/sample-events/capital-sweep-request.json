@@ -1,0 +1,16 @@
+{
+  "event_id": "AIFI-SENTINEL-003",
+  "event_type": "capital_sweep_requested",
+  "source": "mock_ai_fi_telemetry",
+  "request": {
+    "from_domain": "simulated_broker_cash_buffer",
+    "to_domain": "simulated_web3_liquidity_pool",
+    "reason": "low_volatility_regime_detected",
+    "requires_policy_check": true
+  },
+  "sentinel": {
+    "status": "pause_for_review",
+    "reason": "Capital movement events require explicit approval in the public demo workflow."
+  },
+  "public_demo_note": "Fictional sanitized event. No funds are moved."
+}

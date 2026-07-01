@@ -1,0 +1,23 @@
+{
+  "event_id": "AIFI-SENTINEL-001",
+  "event_type": "strategy_mutation_proposed",
+  "source": "mock_ai_fi_telemetry",
+  "cluster_size": 5,
+  "proposal": {
+    "module": "risk_policy",
+    "change_summary": "Adjust drawdown absorber sensitivity after simulated volatility spike.",
+    "risk_bound_change": "max_position_scale reduced from 0.85 to 0.62",
+    "state_preservation_required": true,
+    "hot_swap_requested": true
+  },
+  "consensus": {
+    "votes_required": 4,
+    "votes_observed": 4,
+    "status": "threshold_met"
+  },
+  "sentinel": {
+    "status": "review_required",
+    "reason": "Mutation affects live risk policy and requires human approval before deployment."
+  },
+  "public_demo_note": "Fictional sanitized event. No live trading action is performed."
+}
